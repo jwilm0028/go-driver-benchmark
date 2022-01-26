@@ -19,9 +19,9 @@ You  can also see [ch-bench](https://github.com/go-faster/ch-bench#benchmarks)
 | go-faster    	| Select 100M uint64           	| **161677557**  	| 124695     	    | 6392      	|
 | goclickhouse 	| Select 100M uint64           	| 619731971  	    | 804420292  	    | 18418     	|
 |              	|                              	|               	|            	    |           	|
-| chconn       	| Select 1M string            	| **2827392627** 	| **247694**     	| 3316      	|
+| chconn       	| Select 1M string            	| **39138253**  	| **243380**     	| 3288      	|
 | go-faster    	| Select 1M string            	| 50995805  	    | 684746     	    | **175**       |
-| goclickhouse 	| Select 1M string            	| 82825676      	| 107890787 	    | 10000157  	|
+| goclickhouse 	| Select 1M string            	| 82825676      	| 107890787 	    | 2000752  	|
 |              	|                              	|               	|            	    |           	|
 | chconn       	| Insert 10m uint64 and string 	| **192278818**  	| **34727773**   	| **22**        |
 | go-faster    	| Insert 10m uint64 and string 	| 275889697  	    | 96464431   	    | **55**        |
