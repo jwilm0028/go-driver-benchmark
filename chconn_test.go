@@ -42,7 +42,7 @@ func BenchmarkTestChconnSelect100MUint64(b *testing.B) {
 	}
 }
 
-func BenchmarkTestChconnSelect10MString(b *testing.B) {
+func BenchmarkTestChconnSelect1MString(b *testing.B) {
 	// return
 	ctx := context.Background()
 	c, err := chconn.Connect(ctx, "password=salam")
@@ -53,7 +53,7 @@ func BenchmarkTestChconnSelect10MString(b *testing.B) {
 	colRead := column.NewString(false)
 	var data [][]byte
 	for n := 0; n < b.N; n++ {
-		s, err := c.Select(ctx, "SELECT randomString(20) FROM system.numbers_mt LIMIT 100000000")
+		s, err := c.Select(ctx, "SELECT randomString(20) FROM system.numbers_mt LIMIT 1000000")
 		if err != nil {
 			b.Fatal(err)
 		}

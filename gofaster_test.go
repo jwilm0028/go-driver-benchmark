@@ -45,7 +45,7 @@ func BenchmarkTestGofasterSelect100MUint64(b *testing.B) {
 	}
 }
 
-func BenchmarkTestGofasterSelect10MString(b *testing.B) {
+func BenchmarkTestGofasterSelect1MString(b *testing.B) {
 	ctx := context.Background()
 	c, err := ch.Dial(ctx, ch.Options{
 		Password: "salam",
@@ -63,7 +63,7 @@ func BenchmarkTestGofasterSelect10MString(b *testing.B) {
 	for n := 0; n < b.N; n++ {
 
 		if err := c.Do(ctx, ch.Query{
-			Body: "SELECT randomString(20) as number FROM system.numbers_mt LIMIT 10000000",
+			Body: "SELECT randomString(20) as number FROM system.numbers_mt LIMIT 1000000",
 			OnProgress: func(ctx context.Context, p proto.Progress) error {
 				// gotBytes += p.Bytes
 				return nil

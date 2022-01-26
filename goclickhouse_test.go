@@ -31,7 +31,7 @@ func BenchmarkTestGoclickhouseSelect100MUint64(b *testing.B) {
 		}
 	}
 }
-func BenchmarkTestGoclickhouseSelect10MString(b *testing.B) {
+func BenchmarkTestGoclickhouseSelect1MString(b *testing.B) {
 	c, err := clickhouse.Open(&clickhouse.Options{
 		Addr: []string{"127.0.0.1:9000"},
 		Auth: clickhouse.Auth{
@@ -45,7 +45,7 @@ func BenchmarkTestGoclickhouseSelect10MString(b *testing.B) {
 	}
 
 	for n := 0; n < b.N; n++ {
-		rows, err := c.Query(context.Background(), "SELECT toString(number) FROM system.numbers_mt LIMIT 10000000")
+		rows, err := c.Query(context.Background(), "SELECT toString(number) FROM system.numbers_mt LIMIT 1000000")
 		if err != nil {
 			b.Fatal(err)
 		}
