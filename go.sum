@@ -2,6 +2,8 @@ github.com/ClickHouse/clickhouse-go v1.5.1 h1:I8zVFZTz80crCs0FFEBJooIxsPcV0xfthz
 github.com/ClickHouse/clickhouse-go v1.5.1/go.mod h1:EaI/sW7Azgz9UATzd5ZdZHRUhHgv5+JMS9NSr2smCJI=
 github.com/ClickHouse/clickhouse-go/v2 v2.0.0-beta.2 h1:DC90WUEjhsNSeM1dkANU3oJ7zv1f2ycxCekNwmhMLBU=
 github.com/ClickHouse/clickhouse-go/v2 v2.0.0-beta.2/go.mod h1:kPLb2l8izENhFdH4pqZJarsbPfv/ZK+W1Um9wMq03Ww=
+github.com/ClickHouse/clickhouse-go/v2 v2.0.0-beta.10 h1:6ANI8dnVCeWUqR1yMHz/BLxr99D9eIMn5PuhoxxLbMo=
+github.com/ClickHouse/clickhouse-go/v2 v2.0.0-beta.10/go.mod h1:kPLb2l8izENhFdH4pqZJarsbPfv/ZK+W1Um9wMq03Ww=
 github.com/StackExchange/wmi v0.0.0-20190523213315-cbe66965904d/go.mod h1:3eOhrUMpNV+6aFIbp5/iudMxNCF27Vw2OZgy4xEx0Fg=
 github.com/benbjohnson/clock v1.1.0 h1:Q92kusRqC1XV2MjkWETPvjJVqKetz1OzxZB7mHJLju8=
 github.com/benbjohnson/clock v1.1.0/go.mod h1:J11/hYXuz8f4ySSvYwY0FKfm+ezbsZBKZxNJlLklBHA=
