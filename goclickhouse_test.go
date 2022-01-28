@@ -45,7 +45,7 @@ func BenchmarkTestGoclickhouseSelect1MString(b *testing.B) {
 	}
 
 	for n := 0; n < b.N; n++ {
-		rows, err := c.Query(context.Background(), "SELECT toString(number) FROM system.numbers_mt LIMIT 1000000")
+		rows, err := c.Query(context.Background(), "SELECT randomString(20) FROM system.numbers_mt LIMIT 1000000")
 		if err != nil {
 			b.Fatal(err)
 		}
@@ -88,20 +88,29 @@ func BenchmarkTestGoclickhouseInsert10M(b *testing.B) {
 	const (
 		rowsInBlock = 10_000_000
 	)
-
+	var (
+		col1 []uint64
+		col2 []string
+	)
 	for n := 0; n < b.N; n++ {
+		col1 = col1[:0]
+		col2 = col2[:0]
+		for i := 0; i < rowsInBlock; i++ {
+			col1 = append(col1, 1)
+			col2 = append(col2, "test")
+		}
 		batch, err := c.PrepareBatch(ctx, "INSERT INTO test_insert_go_goclickhouse VALUES")
 		if err != nil {
 			b.Fatal(err)
 		}
-		for i := 0; i < rowsInBlock; i++ {
-			err := batch.Append(uint64(1), "test")
-			if err != nil {
-				b.Fatal(err)
-			}
+		if err := batch.Column(0).Append(col1); err != nil {
+			b.Fatal(err)
 		}
-		err = batch.Send()
-		if err != nil {
+		if err := batch.Column(1).Append(col2); err != nil {
+			b.Fatal(err)
+		}
+
+		if err = batch.Send(); err != nil {
 			b.Fatal(err)
 		}
 	}

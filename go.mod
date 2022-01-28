@@ -3,7 +3,7 @@ module github.com/jwilm0028/go-driver-benchmark
 go 1.17
 
 require (
-	github.com/ClickHouse/clickhouse-go/v2 v2.0.0-beta.2
+	github.com/ClickHouse/clickhouse-go/v2 v2.0.0-beta.10
 	github.com/go-faster/ch v0.17.0
 	github.com/vahid-sohrabloo/chconn v1.2.2
 )
