@@ -16,16 +16,17 @@ You  can also see [ch-bench](https://github.com/go-faster/ch-bench#benchmarks)
 
 
 ## Result
-| lib          	| Function                     	| ns/op      	    | B/op       	    | allocs/op 	|
-|--------------	|------------------------------	|------------------	|-------------------|-----------	|
-| chconn       	| Select 100M uint64           	| **159957761**  	| **33604**      	| **14**        |
-| go-faster    	| Select 100M uint64           	| **161677557**  	| 124695     	    | 6392      	|
-| goclickhouse 	| Select 100M uint64           	| 619731971  	    | 804420292  	    | 18418     	|
-|              	|                              	|               	|            	    |           	|
-| chconn       	| Select 1M string            	| **39138253**  	| **243380**     	| 3288      	|
-| go-faster    	| Select 1M string            	| 50995805  	    | 684746     	    | **175**       |
-| goclickhouse 	| Select 1M string            	| 82825676      	| 107890787 	    | 2000752  	|
-|              	|                              	|               	|            	    |           	|
-| chconn       	| Insert 10m uint64 and string 	| **192278818**  	| **34727773**   	| **22**        |
-| go-faster    	| Insert 10m uint64 and string 	| 275889697  	    | 96464431   	    | **55**        |
-| goclickhouse 	| Insert 10m uint64 and string 	| 985197338 	    | 1654669134 	    | 10000157  	|
+| Lib           | Function                     | ns/op         | B/op          | allocs/op |
+| ------------- | ---------------------------- | ------------- | ------------- | --------- |
+| chconn        | Select 100M uint64           | **156132671** | **33611**     | **14**    |
+| go-faster     | Select 100M uint64           | **156665895** | 124732        | 6394      |
+| go-clickhouse | Select 100M uint64           | 795474396     | 801195961     | 18829     |
+|               |                              |               |               |           |
+| chconn        | Select 1M string             | **34021204**  | **243267**    | 3288      |
+| go-faster     | Select 1M string             | 52143253      | 684490        | **176**   |
+| go-clickhouse | Select 1M string             | 116804874     | 137189293     | 2000766   |
+|               |                              |               |               |           |
+| chconn        | Insert 10m uint64 and string | **183496685** | **34727882**  | **22**    |
+| go-faster     | Insert 10m uint64 and string | 258597566     | 96464450      | **55**    |
+| go-clickhouse | Insert 10m uint64 and string | 346469462     | 402921766     | **66**    |
+
