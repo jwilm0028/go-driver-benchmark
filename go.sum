@@ -1,7 +1,5 @@
 github.com/ClickHouse/clickhouse-go v1.5.1 h1:I8zVFZTz80crCs0FFEBJooIxsPcV0xfthzK1YrkpJTc=
 github.com/ClickHouse/clickhouse-go v1.5.1/go.mod h1:EaI/sW7Azgz9UATzd5ZdZHRUhHgv5+JMS9NSr2smCJI=
-github.com/ClickHouse/clickhouse-go/v2 v2.0.0-beta.2 h1:DC90WUEjhsNSeM1dkANU3oJ7zv1f2ycxCekNwmhMLBU=
-github.com/ClickHouse/clickhouse-go/v2 v2.0.0-beta.2/go.mod h1:kPLb2l8izENhFdH4pqZJarsbPfv/ZK+W1Um9wMq03Ww=
 github.com/ClickHouse/clickhouse-go/v2 v2.0.0-beta.10 h1:6ANI8dnVCeWUqR1yMHz/BLxr99D9eIMn5PuhoxxLbMo=
 github.com/ClickHouse/clickhouse-go/v2 v2.0.0-beta.10/go.mod h1:kPLb2l8izENhFdH4pqZJarsbPfv/ZK+W1Um9wMq03Ww=
 github.com/StackExchange/wmi v0.0.0-20190523213315-cbe66965904d/go.mod h1:3eOhrUMpNV+6aFIbp5/iudMxNCF27Vw2OZgy4xEx0Fg=
@@ -75,8 +73,8 @@ github.com/stretchr/testify v1.3.0/go.mod h1:M5WIy9Dh21IEIfnGCwXGc5bZfKNJtfHm1UV
 github.com/stretchr/testify v1.4.0/go.mod h1:j7eGeouHqKxXV5pUuKE4zz7dFj8WfuZ+81PSLYec5m4=
 github.com/stretchr/testify v1.7.0 h1:nwc3DEeHmmLAfoZucVR881uASk0Mfjw8xYJ99tb5CcY=
 github.com/stretchr/testify v1.7.0/go.mod h1:6Fq8oRcR53rry900zMqJjRRixrwX3KX962/h/Wwjteg=
-github.com/vahid-sohrabloo/chconn v1.2.2 h1:wxIxMkKDK/Yx8ejz4HdhwALIldOBiHmSgm9gSAgIRwk=
-github.com/vahid-sohrabloo/chconn v1.2.2/go.mod h1:FRsF5vG+j49TyLyUlPO22u7p7aHb2KlenaxR0U4SdmU=
+github.com/vahid-sohrabloo/chconn v1.2.3 h1:ex9mOhYPcJorljMhsXupgKC+YEAaRPg3yF6/W23bAFo=
+github.com/vahid-sohrabloo/chconn v1.2.3/go.mod h1:FRsF5vG+j49TyLyUlPO22u7p7aHb2KlenaxR0U4SdmU=
 github.com/yuin/goldmark v1.2.1/go.mod h1:3hX8gzYuyVAZsxl0MRgGTJEmQBFcNTphYh9decYSb74=
 github.com/yuin/goldmark v1.3.5/go.mod h1:mwnBkeHKe2W/ZEtQ+71ViKU8L12m81fl3OWwC1Zlc8k=
 github.com/yuin/goldmark v1.4.1/go.mod h1:mwnBkeHKe2W/ZEtQ+71ViKU8L12m81fl3OWwC1Zlc8k=

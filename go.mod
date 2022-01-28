@@ -5,11 +5,10 @@ go 1.17
 require (
 	github.com/ClickHouse/clickhouse-go/v2 v2.0.0-beta.10
 	github.com/go-faster/ch v0.17.0
-	github.com/vahid-sohrabloo/chconn v1.2.2
+	github.com/vahid-sohrabloo/chconn v1.2.3
 )
 
 require (
-	github.com/ClickHouse/clickhouse-go v1.5.1 // indirect
 	github.com/dmarkham/enumer v1.5.3 // indirect
 	github.com/go-faster/city v1.0.0 // indirect
 	github.com/go-faster/errors v0.5.0 // indirect

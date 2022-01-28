@@ -63,7 +63,7 @@ func BenchmarkTestGofasterSelect1MString(b *testing.B) {
 	for n := 0; n < b.N; n++ {
 
 		if err := c.Do(ctx, ch.Query{
-			Body: "SELECT randomString(20) as number FROM system.numbers_mt LIMIT 1000000",
+			Body: "SELECT randomString(20) as string FROM system.numbers_mt LIMIT 1000000",
 			OnProgress: func(ctx context.Context, p proto.Progress) error {
 				// gotBytes += p.Bytes
 				return nil
@@ -77,7 +77,7 @@ func BenchmarkTestGofasterSelect1MString(b *testing.B) {
 				return nil
 			},
 			Result: proto.Results{
-				{Name: "number", Data: &data},
+				{Name: "string", Data: &data},
 				// {Name: "st", Data: &data2},
 			},
 		}); err != nil {
